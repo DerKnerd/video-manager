@@ -1,0 +1,11 @@
+﻿<Application
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" x:Class="MovieManager.App"
+             StartupUri="MainWindow.xaml">
+
+    <Application.Resources>
+        <ResourceDictionary Source="Theming/Metro.xaml" />
+    </Application.Resources>
+</Application>

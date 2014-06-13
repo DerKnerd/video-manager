@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="MoviesModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.3.5" ProviderManifestToken="3.5" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="MoviesModelStoreContainer">
+    <EntitySet Name="Genres" EntityType="MoviesModel.Store.Genres" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Movies" EntityType="MoviesModel.Store.Movies" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_GenreMovie" Association="MoviesModel.Store.FK_GenreMovie">
+      <End Role="Genres" EntitySet="Genres" />
+      <End Role="Movies" EntitySet="Movies" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Genres">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Bild" Type="nvarchar" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Movies">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Pfad" Type="nvarchar" Nullable="false" MaxLength="4000" />
+    <Property Name="Titel" Type="nvarchar" Nullable="false" MaxLength="4000" />
+    <Property Name="Lange" Type="nvarchar" Nullable="true" MaxLength="4000" />
+    <Property Name="Stichworte" Type="nvarchar" Nullable="true" MaxLength="4000" />
+    <Property Name="Inhalt" Type="nvarchar" Nullable="true" MaxLength="4000" />
+    <Property Name="Bild" Type="nvarchar" Nullable="true" />
+    <Property Name="Grose" Type="bigint" Nullable="true" />
+    <Property Name="GenreID" Type="int" Nullable="true" />
+    <Property Name="Breite" Type="int" Nullable="false" />
+    <Property Name="Hohe" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_GenreMovie">
+    <End Role="Genres" Type="MoviesModel.Store.Genres" Multiplicity="0..1" />
+    <End Role="Movies" Type="MoviesModel.Store.Movies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Genres">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Movies">
+        <PropertyRef Name="GenreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MoviesModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="MovieEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Genres" EntityType="MoviesModel.Genre" />
+          <EntitySet Name="Movies" EntityType="MoviesModel.Movie" />
+          <AssociationSet Name="FK_GenreMovie" Association="MoviesModel.FK_GenreMovie">
+            <End Role="Genres" EntitySet="Genres" />
+            <End Role="Movies" EntitySet="Movies" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Genre">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Bild" Nullable="false" />
+          <NavigationProperty Name="Movies" Relationship="MoviesModel.FK_GenreMovie" FromRole="Genres" ToRole="Movies" />
+        </EntityType>
+        <EntityType Name="Movie">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Type="String" Name="Pfad" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Titel" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Lange" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="true" />
+          <Property Type="String" Name="Stichworte" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="true" />
+          <Property Type="String" Name="Inhalt" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="true" />
+          <Property Type="String" Name="Bild" Nullable="true" />
+          <Property Type="Int64" Name="Grose" Nullable="true" />
+          <Property Name="GenreID" Nullable="true" Type="Int32" />
+          <NavigationProperty Name="Genre" Relationship="MoviesModel.FK_GenreMovie" FromRole="Movies" ToRole="Genres" />
+          <Property Type="Int32" Name="Breite" Nullable="false" />
+          <Property Type="Int32" Name="Hohe" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_GenreMovie">
+          <End Type="MoviesModel.Genre" Role="Genres" Multiplicity="0..1" />
+          <End Type="MoviesModel.Movie" Role="Movies" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Genres">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Movies">
+              <PropertyRef Name="GenreID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MoviesModelStoreContainer" CdmEntityContainer="MovieEntities">
+    <EntitySetMapping Name="Genres">
+      <EntityTypeMapping TypeName="IsTypeOf(MoviesModel.Genre)">
+        <MappingFragment StoreEntitySet="Genres">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Bild" ColumnName="Bild" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Movies">
+      <EntityTypeMapping TypeName="IsTypeOf(MoviesModel.Movie)">
+        <MappingFragment StoreEntitySet="Movies">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Pfad" ColumnName="Pfad" />
+          <ScalarProperty Name="Titel" ColumnName="Titel" />
+          <ScalarProperty Name="Lange" ColumnName="Lange" />
+          <ScalarProperty Name="Stichworte" ColumnName="Stichworte" />
+          <ScalarProperty Name="Inhalt" ColumnName="Inhalt" />
+          <ScalarProperty Name="Bild" ColumnName="Bild" />
+          <ScalarProperty Name="Grose" ColumnName="Grose" />
+          <ScalarProperty Name="GenreID" ColumnName="GenreID" />
+          <ScalarProperty Name="Breite" ColumnName="Breite" />
+          <ScalarProperty Name="Hohe" ColumnName="Hohe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="MovieModel" DisplayType="true">
+        <EntityTypeShape EntityType="MoviesModel.Genre" Width="1.875" PointX="0.5" PointY="0.5" Height="1.787985026041667" />
+        <EntityTypeShape EntityType="MoviesModel.Movie" Width="1.75" PointX="5.25" PointY="0.5" Height="3.3263964843749996" />
+        <AssociationConnector Association="MoviesModel.FK_GenreMovie" >
+          <ConnectorPoint PointX="2.375" PointY="1.3939925130208335" />
+          <ConnectorPoint PointX="5.25" PointY="1.3939925130208335" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

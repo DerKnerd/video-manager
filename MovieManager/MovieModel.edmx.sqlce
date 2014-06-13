@@ -1,0 +1,92 @@
+
+-- --------------------------------------------------
+-- Entity Designer DDL Script for SQL Server Compact Edition
+-- --------------------------------------------------
+-- Date Created: 11/26/2011 23:01:40
+-- Generated from EDMX file: C:\Users\Kirk\Documents\Visual Studio 2010\Projects\MovieManager\MovieManager\MovieModel.edmx
+-- --------------------------------------------------
+
+
+-- --------------------------------------------------
+-- Dropping existing FOREIGN KEY constraints
+-- NOTE: if the constraint does not exist, an ignorable error will be reported.
+-- --------------------------------------------------
+
+    ALTER TABLE [Movies] DROP CONSTRAINT [FK_GenreMovie];
+GO
+
+-- --------------------------------------------------
+-- Dropping existing tables
+-- NOTE: if the table does not exist, an ignorable error will be reported.
+-- --------------------------------------------------
+
+    DROP TABLE [Genres];
+GO
+    DROP TABLE [Movies];
+GO
+
+-- --------------------------------------------------
+-- Creating all tables
+-- --------------------------------------------------
+
+-- Creating table 'Genres'
+CREATE TABLE [Genres] (
+    [ID] int  NOT NULL,
+    [Name] nvarchar(100)  NOT NULL,
+    [Bild] nvarchar(4000)  NOT NULL
+);
+GO
+
+-- Creating table 'Movies'
+CREATE TABLE [Movies] (
+    [ID] int  NOT NULL,
+    [Pfad] nvarchar(4000)  NOT NULL,
+    [Titel] nvarchar(4000)  NOT NULL,
+    [Lange] nvarchar(4000)  NULL,
+    [Stichworte] nvarchar(4000)  NULL,
+    [Inhalt] nvarchar(4000)  NULL,
+    [Bild] nvarchar(4000)  NULL,
+    [Grose] bigint  NULL,
+    [GenreID] int  NULL,
+    [Breite] int  NOT NULL,
+    [Hohe] int  NOT NULL
+);
+GO
+
+-- --------------------------------------------------
+-- Creating all PRIMARY KEY constraints
+-- --------------------------------------------------
+
+-- Creating primary key on [ID] in table 'Genres'
+ALTER TABLE [Genres]
+ADD CONSTRAINT [PK_Genres]
+    PRIMARY KEY ([ID] );
+GO
+
+-- Creating primary key on [ID] in table 'Movies'
+ALTER TABLE [Movies]
+ADD CONSTRAINT [PK_Movies]
+    PRIMARY KEY ([ID] );
+GO
+
+-- --------------------------------------------------
+-- Creating all FOREIGN KEY constraints
+-- --------------------------------------------------
+
+-- Creating foreign key on [GenreID] in table 'Movies'
+ALTER TABLE [Movies]
+ADD CONSTRAINT [FK_GenreMovie]
+    FOREIGN KEY ([GenreID])
+    REFERENCES [Genres]
+        ([ID])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_GenreMovie'
+CREATE INDEX [IX_FK_GenreMovie]
+ON [Movies]
+    ([GenreID]);
+GO
+
+-- --------------------------------------------------
+-- Script has ended
+-- --------------------------------------------------

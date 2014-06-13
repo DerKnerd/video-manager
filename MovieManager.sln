@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieManager", "MovieManager\MovieManager.csproj", "{EFF7A55D-EBBF-444E-B53D-10C8D7F7F579}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XBox360 Controller Wrapper", "XBox360 Controller Wrapper\XBox360 Controller Wrapper.csproj", "{E2F25BE3-DF16-435D-AC10-B1C2D6F6C04C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{77A08C0D-8674-4B5F-A965-1728EF43D8CE}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		MovieManager.vsmdi = MovieManager.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestXbox360Wrapper", "TestXbox360Wrapper\TestXbox360Wrapper.csproj", "{4FAD3B9B-AB2E-49D3-A977-56F829B96B34}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = MovieManager.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFF7A55D-EBBF-444E-B53D-10C8D7F7F579}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{EFF7A55D-EBBF-444E-B53D-10C8D7F7F579}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{EFF7A55D-EBBF-444E-B53D-10C8D7F7F579}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{EFF7A55D-EBBF-444E-B53D-10C8D7F7F579}.Debug|x86.ActiveCfg = Debug|x86
+		{EFF7A55D-EBBF-444E-B53D-10C8D7F7F579}.Debug|x86.Build.0 = Debug|x86
+		{EFF7A55D-EBBF-444E-B53D-10C8D7F7F579}.Release|Any CPU.ActiveCfg = Release|x86
+		{EFF7A55D-EBBF-444E-B53D-10C8D7F7F579}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{EFF7A55D-EBBF-444E-B53D-10C8D7F7F579}.Release|Mixed Platforms.Build.0 = Release|x86
+		{EFF7A55D-EBBF-444E-B53D-10C8D7F7F579}.Release|x86.ActiveCfg = Release|x86
+		{EFF7A55D-EBBF-444E-B53D-10C8D7F7F579}.Release|x86.Build.0 = Release|x86
+		{E2F25BE3-DF16-435D-AC10-B1C2D6F6C04C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2F25BE3-DF16-435D-AC10-B1C2D6F6C04C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2F25BE3-DF16-435D-AC10-B1C2D6F6C04C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E2F25BE3-DF16-435D-AC10-B1C2D6F6C04C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{E2F25BE3-DF16-435D-AC10-B1C2D6F6C04C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E2F25BE3-DF16-435D-AC10-B1C2D6F6C04C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2F25BE3-DF16-435D-AC10-B1C2D6F6C04C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2F25BE3-DF16-435D-AC10-B1C2D6F6C04C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E2F25BE3-DF16-435D-AC10-B1C2D6F6C04C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{E2F25BE3-DF16-435D-AC10-B1C2D6F6C04C}.Release|x86.ActiveCfg = Release|Any CPU
+		{4FAD3B9B-AB2E-49D3-A977-56F829B96B34}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{4FAD3B9B-AB2E-49D3-A977-56F829B96B34}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{4FAD3B9B-AB2E-49D3-A977-56F829B96B34}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{4FAD3B9B-AB2E-49D3-A977-56F829B96B34}.Debug|x86.ActiveCfg = Debug|x86
+		{4FAD3B9B-AB2E-49D3-A977-56F829B96B34}.Debug|x86.Build.0 = Debug|x86
+		{4FAD3B9B-AB2E-49D3-A977-56F829B96B34}.Release|Any CPU.ActiveCfg = Release|x86
+		{4FAD3B9B-AB2E-49D3-A977-56F829B96B34}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{4FAD3B9B-AB2E-49D3-A977-56F829B96B34}.Release|Mixed Platforms.Build.0 = Release|x86
+		{4FAD3B9B-AB2E-49D3-A977-56F829B96B34}.Release|x86.ActiveCfg = Release|x86
+		{4FAD3B9B-AB2E-49D3-A977-56F829B96B34}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+
+  <HelpKINode Title="A Aufz&#228;hlungselement" Url="html/a24de69b-12fb-4bdd-72a4-36319bd82ce1.htm" />
+  <HelpKINode Title="B Aufz&#228;hlungselement" Url="html/a24de69b-12fb-4bdd-72a4-36319bd82ce1.htm" />
+  <HelpKINode Title="Back Aufz&#228;hlungselement" Url="html/a24de69b-12fb-4bdd-72a4-36319bd82ce1.htm" />
+  <HelpKINode Title="Button Aufz&#228;hlung" Url="html/a24de69b-12fb-4bdd-72a4-36319bd82ce1.htm" />
+  <HelpKINode Title="buttonPressed Ereignis" Url="html/ff778e8f-6ddf-dafd-c978-0555fea2deec.htm" />
+  <HelpKINode Title="down Aufz&#228;hlungselement" Url="html/5465c6b6-8bfd-6f2d-8ae8-7bd86f955b31.htm" />
+  <HelpKINode Title="LB Aufz&#228;hlungselement" Url="html/a24de69b-12fb-4bdd-72a4-36319bd82ce1.htm" />
+  <HelpKINode Title="left Aufz&#228;hlungselement" Url="html/5465c6b6-8bfd-6f2d-8ae8-7bd86f955b31.htm" />
+  <HelpKINode Title="LS Aufz&#228;hlungselement" Url="html/a24de69b-12fb-4bdd-72a4-36319bd82ce1.htm" />
+  <HelpKINode Title="LT Aufz&#228;hlungselement" Url="html/a24de69b-12fb-4bdd-72a4-36319bd82ce1.htm" />
+  <HelpKINode Title="RB Aufz&#228;hlungselement" Url="html/a24de69b-12fb-4bdd-72a4-36319bd82ce1.htm" />
+  <HelpKINode Title="right Aufz&#228;hlungselement" Url="html/5465c6b6-8bfd-6f2d-8ae8-7bd86f955b31.htm" />
+  <HelpKINode Title="RS Aufz&#228;hlungselement" Url="html/a24de69b-12fb-4bdd-72a4-36319bd82ce1.htm" />
+  <HelpKINode Title="RT Aufz&#228;hlungselement" Url="html/a24de69b-12fb-4bdd-72a4-36319bd82ce1.htm" />
+  <HelpKINode Title="Start Aufz&#228;hlungselement" Url="html/a24de69b-12fb-4bdd-72a4-36319bd82ce1.htm" />
+  <HelpKINode Title="Stick Aufz&#228;hlung" Url="html/5465c6b6-8bfd-6f2d-8ae8-7bd86f955b31.htm" />
+  <HelpKINode Title="stickMoved Ereignis" Url="html/67bb7ee6-3b80-9753-96bf-9ab9a8c72c09.htm" />
+  <HelpKINode Title="up Aufz&#228;hlungselement" Url="html/5465c6b6-8bfd-6f2d-8ae8-7bd86f955b31.htm" />
+  <HelpKINode Title="X Aufz&#228;hlungselement" Url="html/a24de69b-12fb-4bdd-72a4-36319bd82ce1.htm" />
+  <HelpKINode Title="XBox360Controller Klasse" Url="html/641b5c18-47ef-ac4e-2197-36ed6afccf92.htm" />
+  <HelpKINode Title="XBox360Controller Klasse" Url="html/ff26ecfe-77ea-22a1-47ad-113b921fbf91.htm" />
+  <HelpKINode Title="XBox360Controller Klasse">
+    <HelpKINode Title="alle Member" Url="html/ff26ecfe-77ea-22a1-47ad-113b921fbf91.htm" />
+    <HelpKINode Title="Eregnisse" Url="html/80a6872b-2b31-a28b-d6df-f06b7d288db0.htm" />
+    <HelpKINode Title="Konstruktor" Url="html/6a6a3671-6599-88d4-d72d-d6eae6c2d126.htm" />
+    <HelpKINode Title="Methoden" Url="html/89c146dc-060d-79f5-2d3e-26619676b064.htm" />
+    <HelpKINode Title="&#252;ber XBox360Controller Klasse" Url="html/641b5c18-47ef-ac4e-2197-36ed6afccf92.htm" />
+  </HelpKINode>
+  <HelpKINode Title="XBox360Controller.buttonPressed Ereignis" Url="html/ff778e8f-6ddf-dafd-c978-0555fea2deec.htm" />
+  <HelpKINode Title="XBox360Controller.stickMoved Ereignis" Url="html/67bb7ee6-3b80-9753-96bf-9ab9a8c72c09.htm" />
+  <HelpKINode Title="XBox360Controller.XBox360Controller Konstruktor" Url="html/6a6a3671-6599-88d4-d72d-d6eae6c2d126.htm" />
+  <HelpKINode Title="XNAWrapper Namensraum" Url="html/33074149-f6be-2514-2952-1a51158dd3a1.htm" />
+  <HelpKINode Title="XNAWrapper.Button Aufz&#228;hlung" Url="html/a24de69b-12fb-4bdd-72a4-36319bd82ce1.htm" />
+  <HelpKINode Title="XNAWrapper.Stick Aufz&#228;hlung" Url="html/5465c6b6-8bfd-6f2d-8ae8-7bd86f955b31.htm" />
+  <HelpKINode Title="XNAWrapper.XBox360Controller Klasse" Url="html/641b5c18-47ef-ac4e-2197-36ed6afccf92.htm" />
+  <HelpKINode Title="XNAWrapper.XBox360Controller Klasse" Url="html/ff26ecfe-77ea-22a1-47ad-113b921fbf91.htm" />
+  <HelpKINode Title="Y Aufz&#228;hlungselement" Url="html/a24de69b-12fb-4bdd-72a4-36319bd82ce1.htm" />
+</HelpKI>

@@ -1,0 +1,20 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>XBox360 Wrapper</title>
+</head>
+<body class="vendor-book">
+    <div class="details">
+        <span class="vendor">Knerdprod</span>
+        <span class="locale">de-de</span>
+        <span class="product">XBox360 Wrapper</span>
+        <span class="name">XBox360 Wrapper</span>
+    </div>
+    <div class="package-list">
+        <div class="package">
+            <!-- NOTE: The "name" span value cannot contain any periods! -->
+            <span class="name">XBox360 Wrapper</span>
+            <a class="current-link" href="XBox360 Wrapper.mshc">XBox360 Wrapper.mshc</a>
+        </div>
+    </div>
+</body>
+</html>

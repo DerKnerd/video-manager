@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="8046bcfc-7c8c-42a3-8463-91b076118de0" Title="XNAWrapper Namensraum" Url="html/33074149-f6be-2514-2952-1a51158dd3a1.htm">
+    <HelpTOCNode Title="Button Aufz&#228;hlung" Url="html/a24de69b-12fb-4bdd-72a4-36319bd82ce1.htm" />
+    <HelpTOCNode Title="Stick Aufz&#228;hlung" Url="html/5465c6b6-8bfd-6f2d-8ae8-7bd86f955b31.htm" />
+    <HelpTOCNode Id="ff10ab01-ecb9-485b-bb0a-5b117a96034b" Title="XBox360Controller Klasse" Url="html/641b5c18-47ef-ac4e-2197-36ed6afccf92.htm">
+      <HelpTOCNode Title="XBox360Controller Member" Url="html/ff26ecfe-77ea-22a1-47ad-113b921fbf91.htm" />
+      <HelpTOCNode Title="XBox360Controller Konstruktor " Url="html/6a6a3671-6599-88d4-d72d-d6eae6c2d126.htm" />
+      <HelpTOCNode Title="XBox360Controller Methoden" Url="html/89c146dc-060d-79f5-2d3e-26619676b064.htm" />
+      <HelpTOCNode Id="d9464992-1cf1-4438-9376-1c34fdd160fe" Title="XBox360Controller Ereignisse" Url="html/80a6872b-2b31-a28b-d6df-f06b7d288db0.htm">
+        <HelpTOCNode Title="buttonPressed Ereignis" Url="html/ff778e8f-6ddf-dafd-c978-0555fea2deec.htm" />
+        <HelpTOCNode Title="stickMoved Ereignis" Url="html/67bb7ee6-3b80-9753-96bf-9ab9a8c72c09.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>
